@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 200 200">
+  <style>
+    path {
+      animation: swipe-x 1.25s ease-in-out backwards;
+	    animation-iteration-count: infinite;
+    }
+    @keyframes swipe-x {
+	    0% {
+		    ransform: translateX(0px);
+      }
+      25% {
+        transform: translateX(50px);
+      }
+      50% {
+        transform: translateX(0px);
+      }
+      75% {
+        transform: translateX(-50px);
+      }
+    }
+  </style>
+  <path stroke="black" fill="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M139.93,113.56l-41.12-6.93V76.08a9.25,9.25,0,0,0-9.25-9.25h0a9.25,9.25,0,0,0-9.25,9.25v57.36L71,122.65c-3.61-3.61-8.44-3.89-13.08,0,0,0-7.24,5.84-3.83,9.25l34,34h42.63a9.25,9.25,0,0,0,9.07-7.43l6.82-34.09A9.28,9.28,0,0,0,139.93,113.56Z" />
+</svg>

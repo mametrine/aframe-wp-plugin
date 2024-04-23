@@ -1,0 +1,8 @@
+{
+  "name": "wordpress_widget",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.19.4",
+    "prettier": "^2.8.7"
+  }
+}
