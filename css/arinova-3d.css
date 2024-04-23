@@ -1,200 +1,200 @@
 :root {
-	--arinova3d-viewer-height: 75vh;
+  --arinova3d-viewer-height: 75vh;
 }
 
 a-scene {
-	height: var(--arinova3d-viewer-height) !important;
+  height: var(--arinova3d-viewer-height) !important;
 }
 
 a-scene .a-loader-title {
-	display: none !important;
+  display: none !important;
 }
 
 .arinova3d-viewer-container {
-	width: auto;
-	height: auto;
-	position: relative;
-	overflow: hidden;
+  width: auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .arinova3d-toolbar {
-	position: absolute;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 380px) {
-	.arinova3d-toolbar {
-		width: 380px;
-		height: auto;
-		align-items: center;
-		padding-top: 20px;
-		left: calc(50% - 190px);
-	}
+  .arinova3d-toolbar {
+    width: 380px;
+    height: auto;
+    align-items: center;
+    padding-top: 20px;
+    left: calc(50% - 190px);
+  }
 }
 
 @media (min-width: 1440px) {
-	.arinova3d-toolbar {
-		width: 250px;
-		height: auto;
-		align-items: flex-end;
-		padding: 40px 40px 0 0;
-		right: 0px;
-		left: unset;
-	}
+  .arinova3d-toolbar {
+    width: 250px;
+    height: auto;
+    align-items: flex-end;
+    padding: 40px 40px 0 0;
+    right: 0px;
+    left: unset;
+  }
 }
 
 .arinova3d-toolbar--hidden {
-	display: none;
+  display: none;
 }
 
 .arinova3d-gesture-overlay {
-	width: 200px;
-	height: auto;
-	position: absolute;
-	bottom: 0;
-	left: calc(50% - 100px);
-	z-index: 1;
-	margin: 0 auto;
-	box-sizing: border-box;
-	padding-bottom: 40px;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  z-index: 1;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 40px;
 }
 
 .arinova3d-gesture-overlay--hidden {
-	display: none;
+  display: none;
 }
 
 .arinova3d-gesture-icon {
-	display: block;
-	margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .arinova3d-gesture-instruction {
-	width: inherit;
-	display: block;
-	color: white;
-	mix-blend-mode: difference;
-	text-align: center;
-	font-size: 1rem;
+  width: inherit;
+  display: block;
+  color: white;
+  mix-blend-mode: difference;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .arinova3d-select-menu {
-	width: max-content;
-	height: auto;
-	position: relative;
+  width: max-content;
+  height: auto;
+  position: relative;
 }
 
 .arinova3d-select-menu__label {
-	max-width: 200px;
-	color: rgba(255, 255, 255, 1);
-	font-size: 1rem;
-	line-height: 1;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding: 0 0 12px 4px;
+  max-width: 200px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0 12px 4px;
 }
 
 .arinova3d-select-menu__button {
-	width: 250px;
-	background-color: rgba(255, 255, 255, 0.1);
-	display: flex;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	align-items: center;
-	padding: 8px 12px 8px 8px;
-	margin: 0;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 8px;
-	box-sizing: border-box;
-	font-size: 1rem;
-	font-family: inherit;
-	font-weight: normal;
-	letter-spacing: normal;
-	text-transform: none;
-	transition: none;
-	cursor: default;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px 8px 8px;
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  transition: none;
+  cursor: default;
 }
 
 .arinova3d-select-menu__button:active {
-	border-color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 .arinova3d-select-menu__button-inner-flex-wrapper {
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	padding: 3px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px;
 }
 
 .arinova3d-select-menu__selected-item-text {
-	max-width: 160px;
-	display: inline-block;
-	color: rgb(255, 255, 255);
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	font-size: 1rem;
-	line-height: 1;
+  max-width: 160px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .arinova3d-select-menu--open {
-	list-style-type: none;
-	margin: 0;
-	position: absolute;
-	z-index: 1;
-	width: 250px;
-	height: auto;
-	padding: 8px 8px 8px 8px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 8px;
-	box-sizing: border-box;
-	margin-top: 6px;
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  height: auto;
+  padding: 8px 8px 8px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
 }
 
 .arinova3d-select-menu--closed {
-	display: none;
+  display: none;
 }
 
 .arinova3d-select-menu ul li {
-	padding-bottom: 4px;
-	margin: 0;
-	cursor: default;
+  padding-bottom: 4px;
+  margin: 0;
+  cursor: default;
 }
 
 .arinova3d-select-menu ul li:nth-last-child(-n + 1) {
-	padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .arinova3d-select-menu__item-inner-flex-wrapper {
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	padding: 3px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px;
 }
 
 .arinova3d-select-menu__item-inner-flex-wrapper:hover {
-	background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .arinova3d-select-menu__selected-item-thumbnail,
 .arinova3d-select-menu__item-thumbnail {
-	display: block;
-	border-radius: 4px;
-	width: 34px;
-	height: 34px;
-	object-position: center;
-	object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  width: 34px;
+  height: 34px;
+  object-position: center;
+  object-fit: cover;
 }
 
 .arinova3d-select-menu__item-text {
-	color: rgb(255, 255, 255);
-	font-size: 1rem;
-	line-height: 1;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .arinova3d-select-menu__icon {
-	display: block;
+  display: block;
 }
